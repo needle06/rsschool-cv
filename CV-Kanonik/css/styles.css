@@ -15,6 +15,59 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.info{
+  margin-top: 50px;
+  padding: 10px;  
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+
 img{
   width: 200px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.contacts ul li a {
+  text-decoration: none;
+  color: #5e809b;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #5e809b;
+}
+.education{
+  width: 50%;
+
+}
+.education p{
+  border-right: 1px solid #5e809b;
+  padding-right: 10px;
+}
+h2{
+  padding: 10px;
+}
+.skills{
+  width: 50%;
+  margin-left: 50px;
+}
+.skills li{
+  display: inline-block;
+}
+.code{
+  border-top: 1px solid #5e809b;
+  border-right: 1px solid #5e809b
+}
+.english{
+  text-align: right;
 }
