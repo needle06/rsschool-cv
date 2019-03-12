@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -19,11 +20,17 @@ body {
 .info{
   margin-top: 50px;
   padding: 10px;  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 
@@ -38,10 +45,16 @@ img{
 }
 
 .wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-top: 20px;
   padding: 20px;
   border-top: 1px solid #5e809b;
