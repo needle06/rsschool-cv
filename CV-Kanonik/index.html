@@ -38,7 +38,7 @@
       </div>
     </div>
 
-
+  <div class="wrapper">
     <div class="skills">
       <h2>Skills</h2>
       <ol>
@@ -49,37 +49,42 @@
       </ol>
     </div>
 
+    <div class="courses">
+        <h3>ADDITIONAL COURSES</h3>
+        <p>Front-end developer. JS/React at Myfreedom school (end on March 19)</p>  
+    </div>
+  </div>
+    
+
     <div class="code">
       <h2>Code example</h2>
-            <pre> function duplicateEncode(word){
-              word = word.toLowerCase()
-              let accum = &quot;&quot;;
-              for (let i=0; i&lt;word.length;i++) {
-              if(isUniq(word,i)){
-              accum+=&quot;(&quot;
-            } else {
-            accum+=&quot;)&quot;
-          }
-        }
-        return accum;
-      }
-      function isUniq(string, index){
-      for(let j=0; j&lt;string.length;j++){
-      if(string[index]==string[j] &amp;&amp; index != j){
-      return false;
-      }
-      }
-      return true;
-      }
+            <pre> 
+              function duplicateEncode(word) {
+                word = word.toLowerCase()
+                let accum = &quot;&quot;;
+                for (let i=0; i&lt;word.length;i++) {
+                  if(isUniq(word,i)){
+                    accum+=&quot;(&quot;
+                  } else {
+                    accum+=&quot;)&quot;
+                  }
+                }
+                return accum;
+              }
+              function isUniq(string, index) {
+                for(let j=0; j&lt;string.length;j++){
+                  if(string[index]==string[j] &amp;&amp; index != j) {
+                    return false;
+                  }
+                }
+                return true;
+              }
             </pre>
-  <div class="courses">
-    <h3>ADDITIONAL COURSES</h3>
-    <p>Front-end developer. JS/React at Myfreedom school (end on March 19)</p>  
-  </div>
+  
 
   <div class="english">
     <h3>English</h3>
-    <p>B1, courses courses at International House</p>
+    <p>B1, courses at International House</p>
   </div>
 </div>
 
