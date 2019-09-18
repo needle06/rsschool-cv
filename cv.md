@@ -1,7 +1,7 @@
 # Valeria Kanonik
 
 ## Contacts
- needle06@list.ru | +375297517525 | Skype: needle06 | [LinkedIn](https://www.linkedin.com/in/valeria-kanonik-353ab792)
+ needle0606@gmail.com | +375297517525 | Skype: needle06 | [LinkedIn](https://www.linkedin.com/in/valeria-kanonik-353ab792)
 
 ## Education
 ACADEMY OF PUBLIC ADMINISTRATION UNDER THE AEGIS OF THE PRESIDENT OF THE REPUBLIC OF BELARUS  
