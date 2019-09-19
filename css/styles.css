@@ -10,7 +10,7 @@ body {
   background: rgb(255, 255, 255);
   font-size: 16px;
   font-family: Arial, sans-serif;
-  line-height: 21px;
+  line-height: 1.2;
 }
 
 .container {
@@ -20,24 +20,29 @@ body {
 
 .info {
   margin-top: 50px;
-  padding: 10px;  
+  padding: 20px 10px;  
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
+  justify-items: center;
   grid-gap: 20px;
+  border-bottom: 4px solid gray;
 }
 
-
 img {
-  object-fit: none; 
-  width: 200px;
-  height: 200px;
+  object-fit: cover;
+  object-position: 0 40%;
   border-radius: 50%;
   border: 1px solid grey;
 }
 
+h1, h2 {
+  color: rgb(39, 74, 107);
+}
+
 .contacts {
   justify-self: end;
+  font-size: 19px;
 }
 
 .contacts ul {
@@ -49,42 +54,64 @@ img {
   color: #5e809b;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-top: 20px;
-  padding: 20px;
-  border-top: 1px solid #5e809b;
-}
-
-.education {
-  width: 50%;
-}
-
-.education p {
-  border-right: 1px solid #5e809b;
-  padding-right: 10px;
-}
-
-h2 {
+.education, .work-experience, .skills, .courses, .code-example, .english-level {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
   padding: 10px;
+  margin: 20px;
+} 
+
+.education > h2 {
+  grid-row: 1 / span 3;
 }
 
-.skills {
-  width: 50%;
-  margin-left: 50px;
+.education::after, .work-experience::after, .skills::after, .courses::after, .code-example::after {
+  background: rgb(76, 76, 76);
+  content: '';
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  grid-column: 1 / span 2;
+  margin-top: 20px;
+}
+
+/* section.education:last-child {
+  color: red;
+}
+section.education:only-child {
+  padding: 50px;
+} */
+
+.work-experience > h2 {
+  grid-row: 1 / span 3;
+}
+
+.work-experience > article > p {
+  line-height: 1.6;
+  padding-top: 10px;
+}
+
+.work-experience > article > h3 {
+  text-transform: uppercase;
+  color: rgb(68, 68, 68);
+}
+.work-experience > article > h3 > span {
+  color: black;
+  font-style: italic;
+  text-transform: lowercase;
+  padding-left: 15px;
 }
 
 .skills li {
   display: inline-block;
+  border-right: 1px solid black;
+  padding: 0 10px;
+}
+
+.skills > ol :last-child {
+  border-right: none;
 }
 
 .code {
