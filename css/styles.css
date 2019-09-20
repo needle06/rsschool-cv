@@ -28,6 +28,21 @@ body {
   border-bottom: 4px solid gray;
 }
 
+.telega-icon {
+  background-image: url('../images/telegram-plane-brands.svg');
+  background-repeat: no-repeat;
+}
+
+.skype-icon {
+  background-image: url('../images/skype-brands.svg');
+  background-repeat: no-repeat;
+}
+
+.linkedin-icon {
+  background-image: url('../images/linkedin-brands.svg');
+  background-repeat: no-repeat;
+}
+
 img {
   object-fit: cover;
   object-position: 0 40%;
@@ -46,6 +61,14 @@ h1, h2 {
 
 .contacts ul {
   list-style: none;
+}
+
+.contacts ul li {
+  padding-left: 25px;
+}
+
+.contacts ul :first-child, .contacts ul :nth-child(2) {
+  padding-left: 0;
 }
 
 .contacts ul li a {
